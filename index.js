@@ -1,6 +1,6 @@
 const lt = require('lucene-tokenizers');
 
-exports.tokenize = function (text) {
+exports.tokenize_js = function (text) {
     var ts = new lt.StandardTokenizer();
     ts.setReader(new lt.StringReader(text));
     var res = [], token = null;
