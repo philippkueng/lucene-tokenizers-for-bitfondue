@@ -1,4 +1,4 @@
-const lt = require('lucene-tokenizers');
+const lt = require('./lucene-tokenizers.babel');
 
 exports.tokenize_js = function (text) {
     var ts = new lt.StandardTokenizer();
